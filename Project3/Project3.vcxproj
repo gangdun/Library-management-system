@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{80fcfc0a-694e-437d-ba8e-6b10538317e6}</ProjectGuid>
+    <RootNamespace>Project3</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\zbar\include;D:\opencv-built\install\include\opencv2;D:\opencv-built\install\include;D:\zbar\include\zbar;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\opencv-built\install\x64\vc16\lib;D:\zbar\lib;D:\zbar\bin;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\opencv\Project3\Project3\include;D:\zbar\include;D:\opencv-built\install\include\opencv2;D:\opencv-built\install\include;D:\zbar\include\zbar;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\opencv\Project3\Project3\nlohmann;D:\opencv-built\install\x64\vc16\lib;D:\zbar\lib;D:\zbar\bin;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\zbar\include;D:\opencv-built\install\include\opencv2;D:\opencv-built\install\include;D:\zbar\include\zbar;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\opencv-built\install\x64\vc16\lib;D:\zbar\lib;D:\zbar\bin;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\opencv\Project3\Project3\include;D:\zbar\include;D:\opencv-built\install\include\opencv2;D:\opencv-built\install\include;D:\zbar\include\zbar;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\opencv\Project3\Project3\nlohmann;D:\opencv-built\install\x64\vc16\lib;D:\zbar\lib;D:\zbar\bin;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\opencv\Project3\Project3\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libzbar-0.lib;libzbar64-0.lib;opencv_aruco460d.lib;opencv_bgsegm460d.lib;opencv_bioinspired460d.lib;opencv_calib3d460d.lib;opencv_ccalib460d.lib;opencv_core460d.lib;opencv_datasets460d.lib;opencv_dnn460d.lib;opencv_dnn_objdetect460d.lib;opencv_dpm460d.lib;opencv_face460d.lib;opencv_features2d460d.lib;opencv_flann460d.lib;opencv_fuzzy460d.lib;opencv_gapi460d.lib;opencv_hfs460d.lib;opencv_highgui460d.lib;opencv_imgcodecs460d.lib;opencv_imgproc460d.lib;opencv_img_hash460d.lib;opencv_line_descriptor460d.lib;opencv_ml460d.lib;opencv_objdetect460d.lib;opencv_optflow460d.lib;opencv_phase_unwrapping460d.lib;opencv_photo460d.lib;opencv_plot460d.lib;opencv_quality460d.lib;opencv_reg460d.lib;opencv_rgbd460d.lib;opencv_saliency460d.lib;opencv_shape460d.lib;opencv_stereo460d.lib;opencv_stitching460d.lib;opencv_structured_light460d.lib;opencv_superres460d.lib;opencv_surface_matching460d.lib;opencv_text460d.lib;opencv_tracking460d.lib;opencv_video460d.lib;opencv_videoio460d.lib;opencv_videostab460d.lib;opencv_xfeatures2d460d.lib;opencv_ximgproc460d.lib;opencv_xobjdetect460d.lib;opencv_xphoto460d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\opencv\Project3\Project3\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libzbar-0.lib;"D:\zbar\lib\libzbar64-0.lib";opencv_aruco460.lib;opencv_bgsegm460.lib;opencv_bioinspired460.lib;opencv_calib3d460.lib;opencv_ccalib460.lib;opencv_core460.lib;opencv_datasets460.lib;opencv_dnn460.lib;opencv_dnn_objdetect460.lib;opencv_dpm460.lib;opencv_face460.lib;opencv_features2d460.lib;opencv_flann460.lib;opencv_fuzzy460.lib;opencv_gapi460.lib;opencv_hfs460.lib;opencv_highgui460.lib;opencv_imgcodecs460.lib;opencv_imgproc460.lib;opencv_img_hash460.lib;opencv_line_descriptor460.lib;opencv_ml460.lib;opencv_objdetect460.lib;opencv_optflow460.lib;opencv_phase_unwrapping460.lib;opencv_photo460.lib;opencv_plot460.lib;opencv_quality460.lib;opencv_reg460.lib;opencv_rgbd460.lib;opencv_saliency460.lib;opencv_shape460.lib;opencv_stereo460.lib;opencv_stitching460.lib;opencv_structured_light460.lib;opencv_superres460.lib;opencv_surface_matching460.lib;opencv_text460.lib;opencv_tracking460.lib;opencv_video460.lib;opencv_videoio460.lib;opencv_videostab460.lib;opencv_xfeatures2d460.lib;opencv_ximgproc460.lib;opencv_xobjdetect460.lib;opencv_xphoto460.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\opencv\Project3\Project3\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libzbar-0.lib;libzbar64-0.lib;opencv_aruco460d.lib;opencv_bgsegm460d.lib;opencv_bioinspired460d.lib;opencv_calib3d460d.lib;opencv_ccalib460d.lib;opencv_core460d.lib;opencv_datasets460d.lib;opencv_dnn460d.lib;opencv_dnn_objdetect460d.lib;opencv_dpm460d.lib;opencv_face460d.lib;opencv_features2d460d.lib;opencv_flann460d.lib;opencv_fuzzy460d.lib;opencv_gapi460d.lib;opencv_hfs460d.lib;opencv_highgui460d.lib;opencv_imgcodecs460d.lib;opencv_imgproc460d.lib;opencv_img_hash460d.lib;opencv_line_descriptor460d.lib;opencv_ml460d.lib;opencv_objdetect460d.lib;opencv_optflow460d.lib;opencv_phase_unwrapping460d.lib;opencv_photo460d.lib;opencv_plot460d.lib;opencv_quality460d.lib;opencv_reg460d.lib;opencv_rgbd460d.lib;opencv_saliency460d.lib;opencv_shape460d.lib;opencv_stereo460d.lib;opencv_stitching460d.lib;opencv_structured_light460d.lib;opencv_superres460d.lib;opencv_surface_matching460d.lib;opencv_text460d.lib;opencv_tracking460d.lib;opencv_video460d.lib;opencv_videoio460d.lib;opencv_videostab460d.lib;opencv_xfeatures2d460d.lib;opencv_ximgproc460d.lib;opencv_xobjdetect460d.lib;opencv_xphoto460d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\opencv\Project3\Project3\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libzbar-0.lib;"D:\zbar\lib\libzbar64-0.lib";opencv_aruco460.lib;opencv_bgsegm460.lib;opencv_bioinspired460.lib;opencv_calib3d460.lib;opencv_ccalib460.lib;opencv_core460.lib;opencv_datasets460.lib;opencv_dnn460.lib;opencv_dnn_objdetect460.lib;opencv_dpm460.lib;opencv_face460.lib;opencv_features2d460.lib;opencv_flann460.lib;opencv_fuzzy460.lib;opencv_gapi460.lib;opencv_hfs460.lib;opencv_highgui460.lib;opencv_imgcodecs460.lib;opencv_imgproc460.lib;opencv_img_hash460.lib;opencv_line_descriptor460.lib;opencv_ml460.lib;opencv_objdetect460.lib;opencv_optflow460.lib;opencv_phase_unwrapping460.lib;opencv_photo460.lib;opencv_plot460.lib;opencv_quality460.lib;opencv_reg460.lib;opencv_rgbd460.lib;opencv_saliency460.lib;opencv_shape460.lib;opencv_stereo460.lib;opencv_stitching460.lib;opencv_structured_light460.lib;opencv_superres460.lib;opencv_surface_matching460.lib;opencv_text460.lib;opencv_tracking460.lib;opencv_video460.lib;opencv_videoio460.lib;opencv_videostab460.lib;opencv_xfeatures2d460.lib;opencv_ximgproc460.lib;opencv_xobjdetect460.lib;opencv_xphoto460.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="System.cpp" />
+    <ClCompile Include="Book.cpp" />
+    <ClCompile Include="Scan.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="UI.cpp" />
+    <ClCompile Include="users.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="httplib.h" />
+    <ClInclude Include="head.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
